@@ -16,7 +16,7 @@ public class Reader {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "reader_id")
-    private int readerId;
+    private Integer readerId;
 
     @Column(name = "reader_name")
     private String readerName;
@@ -33,7 +33,7 @@ public class Reader {
     public Reader() {
     }
 
-    public Reader(int readerId, String readerName, String readerPhone, LocalDate registrationDate, String email) {
+    public Reader(Integer readerId, String readerName, String readerPhone, LocalDate registrationDate, String email) {
         this.readerId = readerId;
         this.readerName = readerName;
         this.readerPhone = readerPhone;

@@ -1,11 +1,9 @@
 package com.example.bibliotek.entity;
 
 import jakarta.persistence.*;
-import lombok.Generated;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.awt.*;
 import java.time.LocalDate;
 import java.util.Objects;
 
@@ -17,13 +15,13 @@ public class Loan {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "loan_id")
-    private int	loanId;
+    private Integer	loanId;
 
     @Column(name = "reader_id")
-    private int	readerId;
+    private Integer	readerId;
 
     @Column(name= "book_id")
-    private int bookId;
+    private Integer bookId;
 
     @Column(name = "loan_date")
     private LocalDate loanDate;
@@ -34,7 +32,7 @@ public class Loan {
     public Loan() {
     }
 
-    public Loan(int loanId, int readerId, int bookId, LocalDate loanDate, LocalDate returnDate) {
+    public Loan(Integer loanId, Integer readerId, Integer bookId, LocalDate loanDate, LocalDate returnDate) {
         this.loanId = loanId;
         this.readerId = readerId;
         this.bookId = bookId;

@@ -6,5 +6,6 @@ public enum Genre {
     NON_FICTION,
     POETRY,
     DRAMA,
-    FANTASY
+    FANTASY;
+
 }

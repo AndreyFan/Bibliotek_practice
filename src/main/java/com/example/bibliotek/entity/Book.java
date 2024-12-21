@@ -15,7 +15,7 @@ public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "book_id")
-    private int bookId;
+    private Integer bookId;
 
     @Column(name = "title")
     private String title;
@@ -33,13 +33,14 @@ public class Book {
     public Book() {
     }
 
-    public Book(int bookId, String title, String authorName, Genre genre, int yearPublished) {
+    public Book(Integer bookId, String title, String authorName, Genre genre, int yearPublished) {
         this.bookId = bookId;
         this.title = title;
         this.authorName = authorName;
         this.genre = genre;
         this.yearPublished = yearPublished;
     }
+
 
     @Override
     public boolean equals(Object o) {
